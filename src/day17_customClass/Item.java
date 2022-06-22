@@ -1,0 +1,27 @@
+package day17_customClass;
+
+public class Item {
+
+    public String name;
+    public int unitPrice;
+    public int quantity;
+
+    public void setInfo(String name, int unitPrice, int quantity) {
+        this.name = name;
+        this.unitPrice = unitPrice;
+        this.quantity = quantity;
+    }
+
+    public int calcCost(){
+        int totalCost=unitPrice*quantity;
+        return totalCost;
+    }
+
+    public String toString() {
+        return "Item{" +
+                "name='" + name + '\'' +
+                ", unitPrice=" + unitPrice +
+                ", quantity=" + quantity +
+                '}';
+    }
+}

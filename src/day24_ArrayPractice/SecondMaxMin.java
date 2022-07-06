@@ -10,8 +10,19 @@ public class SecondMaxMin {
         ArrayList<Integer> list=new ArrayList<>();
         list.addAll(Arrays.asList(1, 1, -2, -2, -2, 3, 4, 5, 6, 7, 8, 8, 8, 8));
 
-        int min=Collections.min(list);
-        int max=Collections.max(list);
+        ArrayList<Integer> newList=new ArrayList<>();
+
+        for (Integer each : list) {
+            if(!newList.contains(each)){
+                newList.add(each);
+            }
+        }
+
+        Collections.sort(newList); //to sort the array
+        System.out.println(newList);
+
+        int min=newList.get(1);
+        int max=newList.get(newList.size()-2);
 
         System.out.println("max = " + max);
         System.out.println("min = " + min);

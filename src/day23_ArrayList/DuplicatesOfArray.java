@@ -3,7 +3,8 @@ package day23_ArrayList;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class DuplicatesOfArray {
+public class
+DuplicatesOfArray {
     public static void main(String[] args) {
 
         ArrayList<Integer> list=new ArrayList<>();
